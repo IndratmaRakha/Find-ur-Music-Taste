@@ -1,0 +1,117 @@
+/* Container */
+.conten {
+    display: flex;
+    height: 15vh;
+    display: inline;
+  }
+  
+  /* Tombol garis tiga */
+  .sidebar-toggle {
+    background-color: rgba(255, 255, 255, 0);
+    display: block;
+    right: -90px;
+    font-size: 40px;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    color: #000;
+    z-index: 99999;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(-250px); /* Menyembunyikan sidebar */
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: 99998;
+  }
+  
+/* Daftar di sidebar */
+.sidebar ul div{
+    display: flex;
+}
+.sidebar ul h1{
+    color: #fff;
+    margin: 10px;
+}
+.sidebar ul {
+    margin-left: 10px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Gaya tautan di sidebar */
+  .sidebar a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* Warna hover pada tautan */
+  .sidebar a:hover {
+    background-color: #1a1a1a;
+  }
+
+/* Mengatur sidebar agar terbuka saat tombol ditekan */
+.sidebar.open {
+    transform: translateX(0);
+    background-color: #333;
+}
+
+h1{
+    margin: 120px 50px;
+}
+/* Main content */
+.content {
+    margin-left: 60px; /* Adjust with sidebar width */
+    padding: 20px;
+  }
+
+  .content h1 {
+    margin-bottom: 20px;
+    margin-left: 0px;
+  }
+
+  /* Table styles */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+  th, td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  .edit-btn,
+  .delete-btn {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .edit-btn{
+    background-color: #36f462;
+    margin-right: 5px;
+  }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="conten">
+        <div class="sidebar">
+            <button class="sidebar-toggle">&#9776;</button> <!-- Tombol garis tiga -->
+            <ul>
+                <div>
+                    <img src="../music.png" alt="" width="50px" height="50px">
+                    <h1>MUSIC</h1>
+                </div>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="music.html">Music List</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="../main.html">LogOut</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Data Music</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Judul Lagu</th>
+              <th>Durasi</th>
+              <th>Tahun Rilis</th>
+              <th>Artis</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pelangi-Pelangi</td>
+              <td>3 Menit</td>
+              <td>2002</td>
+              <td>Unknow</td>
+              <td><span><button class="edit-btn">Edit</button></span><button class="delete-btn">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>Balonku Ada Lima</td>
+                <td>3 Menit</td>
+                <td>2002</td>
+                <td>Unknow</td>
+                <td><span><button class="edit-btn">Edit</button></span><button class="delete-btn">Hapus</button></td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    <script src="admin.js"></script>
+</body>
+</html>

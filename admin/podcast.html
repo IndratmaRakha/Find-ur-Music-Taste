@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="conten">
+        <div class="sidebar">
+            <button class="sidebar-toggle">&#9776;</button> <!-- Tombol garis tiga -->
+            <ul>
+                <div>
+                    <img src="../music.png" alt="" width="50px" height="50px">
+                    <h1>MUSIC</h1>
+                </div>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="music.html">Music List</a></li>
+                <li><a href="podcast.html">Podcast</a></li>
+                <li><a href="../main.html">LogOut</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Data Podcast</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Judul Podcast</th>
+              <th>Durasi</th>
+              <th>Tahun Rilis</th>
+              <th>Artis</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GoBlock</td>
+              <td>47 Menit</td>
+              <td>2018</td>
+              <td>Unknow</td>
+              <td><span><button class="edit-btn">Edit</button></span><button class="delete-btn">Hapus</button></td>
+            </tr>
+            <tr>
+                <td>Rindu</td>
+                <td>64 Menit</td>
+                <td>2022</td>
+                <td>Unknow</td>
+                <td><span><button class="edit-btn">Edit</button></span><button class="delete-btn">Hapus</button></td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    <script src="admin.js"></script>
+</body>
+</html>
