@@ -1,0 +1,249 @@
+.profil{
+    display: flex;
+    margin-right: 50px;
+}
+.profil div{
+    width: 40px;
+    height: 40px;
+    background-color: #242424;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.profil div img{
+    margin: 3px 0 0 5px;
+    width: 30px;
+    height: 30px;
+}
+.profil a{
+    height: 100%;
+    text-decoration: none;
+    color: #000;
+    background: radial-gradient(circle at top right, #f2ff00, #00b80c);
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 0;
+}
+.user{
+    background: radial-gradient(at top right, #3c3c3c, #191919 50%);
+    color: #fff;
+    display: flex;
+    padding-top: 100px;
+}
+.user img{
+    width: 300px;
+    height:  300px;
+    margin: 30px;
+    border-radius: 100%;
+    border: #fff 1px solid;
+}
+.user h3{
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.user h1{
+    margin: 0;
+    font-size: 100px;
+}
+.user div{
+    margin: 140px 0px 0px;
+}
+.judul{
+    color: #fff;
+    margin-left: 20px;
+}
+.suka{
+    color: #fff;
+}
+.suka ol{
+    padding: 0;
+}
+.suka ol li{
+    margin: 0px 20px;
+    padding: 5px;
+    display: flex;
+    border-radius: 5px;
+}
+.suka ol li:hover{
+    cursor: pointer;
+    background-color: #585858;
+}
+.suka ol li div{
+    width: 200px;
+    margin: 0px 20px;
+}
+.suka ol li h2{
+    margin-right: 15px;
+}
+.suka ol li h4{
+    margin: 20px 0px 0; 
+}
+.suka ol li h5{
+    margin: 30px 0 0 0;
+    margin-left: 35%;
+}
+
+.suka ol li p{
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.suka ol li img{
+    width: 70px;
+    height: 70px;
+    border-radius: 5px;
+}
+.teman{
+    display: flex;
+    color: #fff;
+}
+.teman img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: #fff 1px solid;
+}
+.teman div{
+    border-radius: 5px;
+    margin: 10px 30px;
+    padding: 5px;
+}
+.teman div:hover{
+    cursor: pointer;
+    background-color: #585858;
+}
+/* Desain untuk container carousel */
+.carousel-container {
+    color: #fff;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Desain untuk divisi gambar dan teks */
+.carousel-item {
+    flex: 0 0 33.33%;
+    margin: 10px;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.carousel-track  :hover{
+    background-color: #585858;
+    cursor: pointer;
+} 
+.carousel-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: #fff 1px solid;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Tombol navigasi carousel */
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Container untuk items */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Gaya untuk container pemutar musik */
+.music-player {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    width: 400px;
+    /* height: 100px; */
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: 350px;
+}
+
+/* Tombol kontrol */
+.controls{
+    margin-top: 0px;
+}
+.controls img{
+    width: 300px;
+    height: 90px;
+}
+
+/* Informasi lagu */
+#track-info {
+    margin-top: 0px;
+}
+#track-title{
+    margin: 0;
+    font-weight: bold;
+}
+#artist-name{
+    font-size: 10px;
+    margin: 5px 0px 15px 0;
+}
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 25px;
+    }
+    .user img{
+        width: 150px;
+        height: 150px;
+        margin: 10px;
+    }
+    .user h3{
+        font-weight: normal;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .user h1{
+        margin: 0;
+        font-size: 30px;
+    }
+    .user div{
+        margin: 50px 0px 0px;
+    }
+    .suka ol li h5{
+        display: none;
+    }
+    .teman div{
+        margin: 0 5px;
+    }
+    .teman img{
+        width: 100px;
+        height: 100px;
+    }
+    .teman h1{
+        font-size: 20px;
+    }
+    .carousel-item img{
+        width: 100px;
+        height: 100px;
+        border-radius: 8px;
+    }
+    .music-player {
+        display: none;
+    }
+}

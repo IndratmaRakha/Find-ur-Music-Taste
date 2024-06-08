@@ -1,49 +1,3 @@
-{/* <script>
-    // Fungsi untuk menampilkan pesan kesalahan
-    function showError(input, message) {
-        const formControl = input.parentElement;
-        formControl.className = 'form-control error';
-        const small = formControl.querySelector('small');
-        small.innerText = message;
-    }
-
-    // Fungsi untuk menampilkan pesan sukses
-    function showSuccess(input) {
-        const formControl = input.parentElement;
-        formControl.className = 'form-control success';
-    }
-
-    // Fungsi untuk memeriksa apakah input kosong
-    function checkRequired(inputArray) {
-        let isRequired = false;
-        inputArray.forEach(function(input) {
-            if (input.value.trim() === '') {
-                showError(input, `${getFieldName(input)} is required`);
-                isRequired = true;
-            } else {
-                showSuccess(input);
-            }
-        });
-        return !isRequired;
-    }
-
-    // Fungsi untuk mendapatkan nama field
-    function getFieldName(input) {
-        return input.id.charAt(0).toUpperCase() + input.id.slice(1);
-    }
-
-    // Event listener untuk form registrasi
-    document.getElementById('registrationForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        // Memeriksa kevalidan input
-        if (checkRequired([username, email, password, confirmPassword])) {
-            alert('Registrasi berhasil!');
-            // Lakukan tindakan lanjutan di sini, misalnya mengirim data ke server
-        }
-    });
-</script> */}
-
 // Mendapatkan elemen tombol untuk membuka popup
 const openPopupBtn = document.getElementById("open-popup-btn");
 // Mendapatkan elemen popup
@@ -117,3 +71,32 @@ openPopupBtn.addEventListener("click", openPopup);
 // Menambahkan event listener ke tombol tutup untuk menutup popup
 const closeButton = document.querySelector(".popup-close");
 closeButton.addEventListener("click", closePopup);
+
+// Fungsi untuk mengubah background navbar saat di-scroll
+function handleScroll() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+}
+
+// Tambahkan event listener pada scroll
+window.addEventListener('scroll', handleScroll);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.getElementById('menu-btn');
+    const navItems = document.querySelectorAll('.nav-item');
+
+    menuBtn.addEventListener('change', function () {
+        navItems.forEach(item => {
+            if (menuBtn.checked) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+
